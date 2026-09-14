@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { ArrowRight, Book, FlaskConical, Sparkles, Leaf } from "lucide-react";
 
-type Category = "classical" | "proprietary" | "cosmetic" | "phytopharmaceutical" | null;
+type Category =
+  "classical" | "proprietary" | "cosmetic" | "phytopharmaceutical" | null;
 
 interface WizardProps {
   onComplete: (category: string) => void;
@@ -16,28 +17,32 @@ export default function ClassificationWizard({ onComplete }: WizardProps) {
     {
       id: "classical",
       title: "Classical Medicine",
-      description: "Formulation and method drawn exactly from a First-Schedule authoritative text.",
+      description:
+        "Formulation and method drawn exactly from a First-Schedule authoritative text.",
       icon: Book,
       color: "from-amber-600 to-orange-600",
     },
     {
       id: "proprietary",
       title: "Patent or Proprietary",
-      description: "A novel formulation using traditional ingredients but with a new recipe.",
+      description:
+        "A novel formulation using traditional ingredients but with a new recipe.",
       icon: FlaskConical,
       color: "from-blue-600 to-indigo-600",
     },
     {
       id: "cosmetic",
       title: "Ayurvedic Cosmetic",
-      description: "Intended for rubbing, pouring, sprinkling, or spraying for beautification.",
+      description:
+        "Intended for rubbing, pouring, sprinkling, or spraying for beautification.",
       icon: Sparkles,
       color: "from-pink-500 to-rose-500",
     },
     {
       id: "phytopharmaceutical",
       title: "Phytopharmaceutical",
-      description: "Purified and fractionated botanical extract with minimum 4 markers.",
+      description:
+        "Purified and fractionated botanical extract with minimum 4 markers.",
       icon: Leaf,
       color: "from-emerald-500 to-forest",
     },
@@ -50,8 +55,9 @@ export default function ClassificationWizard({ onComplete }: WizardProps) {
           What are you trying to protect?
         </h2>
         <p className="text-foreground/70 max-w-2xl mx-auto">
-          Intellectual property strategy depends entirely on regulatory classification. 
-          Select the category that best describes your Ayurvedic product.
+          Intellectual property strategy depends entirely on regulatory
+          classification. Select the category that best describes your Ayurvedic
+          product.
         </p>
       </div>
 
@@ -70,12 +76,18 @@ export default function ClassificationWizard({ onComplete }: WizardProps) {
               }`}
             >
               <div className="flex items-start gap-4">
-                <div className={`p-3 rounded-xl bg-gradient-to-br ${cat.color} text-white shadow-md`}>
+                <div
+                  className={`p-3 rounded-xl bg-gradient-to-br ${cat.color} text-white shadow-md`}
+                >
                   <Icon size={24} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-foreground mb-1">{cat.title}</h3>
-                  <p className="text-sm text-foreground/70">{cat.description}</p>
+                  <h3 className="text-lg font-bold text-foreground mb-1">
+                    {cat.title}
+                  </h3>
+                  <p className="text-sm text-foreground/70">
+                    {cat.description}
+                  </p>
                 </div>
               </div>
             </div>

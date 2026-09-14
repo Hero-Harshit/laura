@@ -14,9 +14,12 @@ export default function TeamCodeveda() {
           <div className="w-full max-w-4xl">
             {/* Blank as of now for Future Developments */}
             <div className="flex flex-col items-center justify-center h-[60vh] text-center formal-panel rounded-2xl p-10 animate-in fade-in zoom-in duration-500">
-              <h2 className="text-3xl font-bold text-foreground mb-4 bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-brand-accent">Team Codeveda</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-4 bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-brand-accent">
+                Team Codeveda
+              </h2>
               <p className="text-muted-foreground max-w-md">
-                This dedicated team page is currently empty but we will develop it in the future.
+                This dedicated team page is currently empty but we will develop
+                it in the future.
               </p>
             </div>
           </div>

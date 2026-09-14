@@ -9,7 +9,12 @@ interface CitationCardProps {
   confidence?: "high" | "medium" | "low";
 }
 
-export default function CitationCard({ source, section, url, confidence = "high" }: CitationCardProps) {
+export default function CitationCard({
+  source,
+  section,
+  url,
+  confidence = "high",
+}: CitationCardProps) {
   return (
     <div className="flex items-center justify-between p-3 my-2 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-shadow">
       <div className="flex items-start gap-3">
@@ -17,11 +22,15 @@ export default function CitationCard({ source, section, url, confidence = "high"
           <Scroll size={18} />
         </div>
         <div>
-          <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100">{source}</h4>
-          <p className="text-xs text-slate-500 dark:text-slate-400">{section}</p>
+          <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100">
+            {source}
+          </h4>
+          <p className="text-xs text-slate-500 dark:text-slate-400">
+            {section}
+          </p>
         </div>
       </div>
-      
+
       <div className="flex items-center gap-3">
         {confidence === "high" && (
           <div className="flex items-center gap-1 text-xs font-medium text-emerald-700 bg-emerald-50 px-2 py-1 rounded-full border border-emerald-200">
@@ -29,7 +38,7 @@ export default function CitationCard({ source, section, url, confidence = "high"
             Verified
           </div>
         )}
-        
+
         {url && (
           <a
             href={url}

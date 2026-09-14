@@ -299,7 +299,9 @@ body {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(12px);
   border: 1px solid var(--brand-200);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 0 3px rgba(0, 0, 0, 0.02);
+  box-shadow:
+    0 4px 20px -2px rgba(0, 0, 0, 0.05),
+    0 0 3px rgba(0, 0, 0, 0.02);
 }
 
 .dark .formal-panel {

@@ -1,6 +1,13 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import { Database, ExternalLink, FileText, Search, Library, Scale } from "lucide-react";
+import {
+  Database,
+  ExternalLink,
+  FileText,
+  Search,
+  Library,
+  Scale,
+} from "lucide-react";
 
 export default function CorpusPage() {
   const officialSources = [
@@ -9,22 +16,22 @@ export default function CorpusPage() {
       acronym: "TKDL",
       url: "https://tkdl.res.in",
       icon: <Library className="w-6 h-6 mb-3 text-brand-600" />,
-      desc: "Database of Indian traditional knowledge to prevent misappropriation."
+      desc: "Database of Indian traditional knowledge to prevent misappropriation.",
     },
     {
       name: "Statutes & Rules (India Code)",
       acronym: "India Code",
       url: "https://indiacode.nic.in",
       icon: <Scale className="w-6 h-6 mb-3 text-brand-600" />,
-      desc: "Digital repository of all Central and State Acts."
+      desc: "Digital repository of all Central and State Acts.",
     },
     {
       name: "IP India Public Databases",
       acronym: "IP India",
       url: "https://ipindia.gov.in",
       icon: <Search className="w-6 h-6 mb-3 text-brand-600" />,
-      desc: "Patents, Trade Marks, Designs & GI Registry."
-    }
+      desc: "Patents, Trade Marks, Designs & GI Registry.",
+    },
   ];
 
   const placeholderDocs: { title: string; date: string }[] = [];
@@ -38,14 +45,14 @@ export default function CorpusPage() {
 
         <div className="flex-1 lg:ml-16 w-full p-6 lg:p-12 animate-in fade-in zoom-in duration-500">
           <div className="max-w-6xl mx-auto space-y-12">
-
             {/* Header Section */}
             <div className="text-center md:text-left space-y-4">
               <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-accent tracking-tight pb-2">
                 Legal Corpus
               </h1>
               <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed">
-                Access official intellectual property databases and important regulatory documents from recognized authorities in India.
+                Access official intellectual property databases and important
+                regulatory documents from recognized authorities in India.
               </p>
             </div>
 
@@ -71,8 +78,12 @@ export default function CorpusPage() {
                       <div className="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                         {source.icon}
                       </div>
-                      <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-1">{source.acronym}</h3>
-                      <h4 className="text-sm font-semibold text-brand-600 mb-3">{source.name}</h4>
+                      <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-1">
+                        {source.acronym}
+                      </h3>
+                      <h4 className="text-sm font-semibold text-brand-600 mb-3">
+                        {source.name}
+                      </h4>
                       <p className="text-sm text-slate-500 dark:text-slate-400 mb-6 flex-1">
                         {source.desc}
                       </p>
@@ -101,14 +112,21 @@ export default function CorpusPage() {
 
               <div className="grid grid-cols-1 gap-4">
                 {placeholderDocs.map((doc, idx) => (
-                  <div key={idx} className="flex items-center justify-between p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-brand-200 transition-all duration-300 cursor-pointer group">
+                  <div
+                    key={idx}
+                    className="flex items-center justify-between p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md hover:border-brand-200 transition-all duration-300 cursor-pointer group"
+                  >
                     <div className="flex items-center gap-4">
                       <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
                         <FileText className="w-5 h-5" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-slate-700 dark:text-slate-200 group-hover:text-slate-900 transition-colors">{doc.title}</h4>
-                        <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">Uploaded: {doc.date}</p>
+                        <h4 className="font-semibold text-slate-700 dark:text-slate-200 group-hover:text-slate-900 transition-colors">
+                          {doc.title}
+                        </h4>
+                        <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
+                          Uploaded: {doc.date}
+                        </p>
                       </div>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-slate-50 dark:bg-slate-950 flex items-center justify-center text-slate-400 dark:text-slate-500 group-hover:bg-brand-50 group-hover:text-brand-600 transition-colors">
@@ -118,7 +136,6 @@ export default function CorpusPage() {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </div>

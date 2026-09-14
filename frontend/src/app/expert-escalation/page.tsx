@@ -16,9 +16,12 @@ export default function ExpertEscalation() {
           <div className="w-full max-w-4xl">
             {/* Blank as of now for Future Developments */}
             <div className="flex flex-col items-center justify-center h-[60vh] text-center formal-panel rounded-2xl p-10 animate-in fade-in zoom-in duration-500">
-              <h2 className="text-3xl font-bold text-foreground mb-4">Expert Escalation</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-4">
+                Expert Escalation
+              </h2>
               <p className="text-muted-foreground max-w-md">
-                This page is currently blank and will be updated in future developments.
+                This page is currently blank and will be updated in future
+                developments.
               </p>
             </div>
           </div>
