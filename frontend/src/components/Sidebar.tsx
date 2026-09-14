@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Settings, UserPlus } from "lucide-react";
+import { Settings, UserPlus, Users } from "lucide-react";
 export default function Sidebar() {
   const pathname = usePathname();
 
@@ -46,11 +46,18 @@ export default function Sidebar() {
       icon: (
         <UserPlus size={22} className="shrink-0" />
       )
+    },
+    {
+      name: "Settings",
+      href: "/settings",
+      icon: (
+        <Settings size={22} className="shrink-0" />
+      )
     }
   ];
 
   return (
-    <aside className="hidden lg:flex w-16 hover:w-64 fixed left-0 top-[73px] h-[calc(100vh-73px)] border-r border-brand-600 dark:border-white/20 bg-brand-50/80 dark:bg-zinc-950/80 backdrop-blur-xl z-50 flex-col py-6 gap-2 group transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden shadow-[1px_0_10px_rgba(0,0,0,0.02)]">
+    <aside className="hidden lg:flex w-16 hover:w-64 fixed left-0 top-[73px] h-[calc(100vh-73px)] border-r border-brand-600 dark:border-white/20 bg-brand-50/80 dark:bg-zinc-950/80 backdrop-blur-xl z-50 flex-col pt-6 pb-1 gap-2 group transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-hidden shadow-[1px_0_10px_rgba(0,0,0,0.02)]">
       <div className="px-2 w-full flex flex-col gap-2">
         {links.map((link) => {
           const isActive = pathname === link.href;
@@ -76,23 +83,23 @@ export default function Sidebar() {
         })}
       </div>
       
-      <div className="mt-auto px-2 w-full">
+      <div className="mt-auto px-3 w-full flex flex-col items-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300">
         <Link
-          href="/settings"
-          className={`w-full flex items-center h-12 rounded-xl active:scale-95 transition-all relative overflow-hidden group/btn ${
-            pathname === "/settings"
+          href="/team"
+          className={`w-full flex items-center justify-center h-10 rounded-full border-2 border-brand-500 active:scale-95 transition-all overflow-hidden ${
+            pathname === "/team"
               ? "text-brand-600 bg-brand-50/80 shadow-sm dark:bg-brand-900/20 dark:text-brand-400" 
-              : "text-slate-400 dark:text-slate-500 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-brand-50/80 dark:hover:bg-zinc-900/50 hover:shadow-sm"
+              : "text-brand-600 dark:text-brand-500 hover:text-brand-700 dark:hover:text-brand-400 hover:bg-brand-50/80 dark:hover:bg-zinc-900/50 hover:shadow-sm"
           }`}
-          title="Settings"
+          title="Team Codeveda"
         >
-          <div className="w-12 h-12 flex items-center justify-center shrink-0">
-            <Settings size={22} className="shrink-0" />
-          </div>
-          <span className="ml-2 font-semibold text-sm tracking-wide whitespace-nowrap opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-            Settings
+          <span className="font-bold text-sm tracking-wide whitespace-nowrap">
+            Team Codeveda
           </span>
         </Link>
+        <div className="text-[10px] text-center text-slate-400 mt-1 leading-tight whitespace-nowrap overflow-hidden">
+          Made with Love,<br/>Made By Hero Harshit
+        </div>
       </div>
     </aside>
   );
