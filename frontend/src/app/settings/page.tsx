@@ -53,8 +53,8 @@ export default function SettingsPage() {
         <Sidebar />
 
         <div className="flex-1 lg:ml-16 w-full px-4 lg:px-12 flex justify-center items-center py-20">
-          <div className="w-full max-w-5xl flex flex-col animate-in fade-in zoom-in duration-500">
-            <div className="flex items-center gap-4 mb-12">
+          <div className="w-full max-w-5xl flex flex-col animate-in fade-in duration-300">
+            <div className="flex items-center gap-4 mb-12 animate-in slide-in-from-left-4 fade-in duration-500">
               <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-brand-400 to-brand-accent shadow-lg shadow-brand-500/20 flex items-center justify-center text-white">
                 <Settings size={28} />
               </div>
@@ -68,7 +68,7 @@ export default function SettingsPage() {
               </div>
             </div>
 
-            <div className="formal-panel p-8 rounded-2xl w-full">
+            <div className="formal-panel p-8 rounded-2xl w-full animate-in slide-in-from-bottom-4 fade-in duration-300" style={{ animationDelay: "100ms" }}>
               <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-6 flex items-center gap-2">
                 <Palette size={20} className="text-brand-500" />
                 Appearance & Theme

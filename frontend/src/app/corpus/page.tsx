@@ -43,10 +43,10 @@ export default function CorpusPage() {
       <div className="flex flex-1 w-full max-w-[1600px] mx-auto relative">
         <Sidebar />
 
-        <div className="flex-1 lg:ml-16 w-full p-6 lg:p-12 animate-in fade-in zoom-in duration-500">
+        <div className="flex-1 lg:ml-16 w-full p-6 lg:p-12 animate-in fade-in duration-300">
           <div className="max-w-6xl mx-auto space-y-12">
             {/* Header Section */}
-            <div className="text-center md:text-left space-y-4">
+            <div className="text-center md:text-left space-y-4 animate-in slide-in-from-left-4 fade-in duration-500">
               <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-accent tracking-tight pb-2">
                 Legal Corpus
               </h1>
@@ -57,7 +57,7 @@ export default function CorpusPage() {
             </div>
 
             {/* Official Sources - Premium Buttons */}
-            <div className="space-y-6">
+            <div className="space-y-6 animate-in slide-in-from-bottom-4 fade-in duration-300" style={{ animationDelay: "100ms" }}>
               <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
                 <Database className="w-6 h-6 text-brand-500" />
                 Official Sources
@@ -99,7 +99,7 @@ export default function CorpusPage() {
             </div>
 
             {/* Google Docs List Placeholder */}
-            <div className="space-y-6 pt-8 border-t border-slate-200 dark:border-slate-800">
+            <div className="space-y-6 pt-8 border-t border-slate-200 dark:border-slate-800 animate-in slide-in-from-bottom-4 fade-in duration-300" style={{ animationDelay: "200ms" }}>
               <div className="flex items-center justify-between">
                 <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
                   <FileText className="w-6 h-6 text-brand-500" />

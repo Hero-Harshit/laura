@@ -266,7 +266,7 @@ export default function PrivacyPage() {
         <Sidebar />
 
         {/* Main Content Area */}
-        <div className="flex-1 lg:ml-16 w-full px-4 sm:px-8 lg:px-8 flex justify-center py-6 md:py-8 h-full overflow-hidden">
+        <div className="flex-1 lg:ml-16 w-full px-4 sm:px-8 lg:px-8 flex justify-center py-6 md:py-8 h-full overflow-hidden animate-in fade-in duration-300">
           {/* Documentation Layout Container - Expanded to full width */}
           <div className="w-full flex flex-col lg:flex-row items-start gap-8 lg:gap-12 relative h-full">
             {/* Mobile Navigation (Horizontal Scroll) */}
@@ -312,7 +312,7 @@ export default function PrivacyPage() {
 
             {/* COLUMN 2: CENTER - Main Reading Column */}
             <div
-              className="flex-1 w-full max-w-[800px] mx-auto min-w-0 h-full pt-4 lg:pt-0 animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both"
+              className="flex-1 w-full max-w-[800px] mx-auto min-w-0 h-full pt-4 lg:pt-0 animate-in slide-in-from-bottom-4 fade-in duration-300 fill-mode-both"
               key={activePolicy.id}
             >
               <div className="mb-12">
@@ -343,7 +343,7 @@ export default function PrivacyPage() {
 
             {/* COLUMN 3: RIGHT - Context Panel */}
             <aside
-              className="hidden xl:flex flex-col w-80 shrink-0 h-full pl-4 pb-12 animate-in fade-in slide-in-from-right-8 duration-500 fill-mode-both"
+              className="hidden xl:flex flex-col w-80 shrink-0 h-full pl-4 pb-12 animate-in slide-in-from-bottom-4 fade-in duration-300 fill-mode-both" style={{ animationDelay: "100ms" }}
               key={`meta-${activePolicy.id}`}
             >
               {/* TL;DR Box */}

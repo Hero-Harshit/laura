@@ -152,9 +152,9 @@ export default function TermsAndConditionsPage() {
         <Sidebar />
 
         {/* Main Content Area */}
-        <div className="flex-1 lg:ml-16 w-full px-4 sm:px-8 lg:px-12 pt-8 pb-20 overflow-y-auto">
+        <div className="flex-1 lg:ml-16 w-full px-4 sm:px-8 lg:px-12 pt-8 pb-20 overflow-y-auto animate-in fade-in duration-300">
           {/* Hero Section */}
-          <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center text-center animate-in fade-in slide-in-from-bottom-8 duration-700 mb-16 relative">
+          <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center text-center animate-in slide-in-from-bottom-4 fade-in duration-300 mb-16 relative">
             <div className="absolute inset-0 bg-brand-500/5 blur-3xl rounded-full -z-10 w-3/4 mx-auto h-full"></div>
 
             <div className="w-20 h-20 mb-6 rounded-2xl bg-gradient-to-tr from-brand-400 to-brand-600 shadow-xl shadow-brand-500/30 flex items-center justify-center text-white rotate-3 hover:rotate-0 transition-transform duration-500">
@@ -177,7 +177,7 @@ export default function TermsAndConditionsPage() {
               return (
                 <div
                   key={term.id}
-                  className="formal-panel group rounded-2xl p-6 relative overflow-hidden hover:scale-[1.02] hover:shadow-brand-500/10 transition-all duration-500 animate-in fade-in zoom-in"
+                  className="formal-panel group rounded-2xl p-6 relative overflow-hidden hover:scale-[1.02] hover:shadow-brand-500/10 transition-all duration-500 animate-in slide-in-from-bottom-4 fade-in"
                   style={{
                     animationDelay: index * 50 + "ms",
                     animationFillMode: "both",

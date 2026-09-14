@@ -139,9 +139,9 @@ export default function AboutPage() {
         <Sidebar />
 
         {/* Main Content Area */}
-        <div className="flex-1 lg:ml-16 w-full px-4 sm:px-8 lg:px-12 pt-8 pb-24 overflow-y-auto">
+        <div className="flex-1 lg:ml-16 w-full px-4 sm:px-8 lg:px-12 pt-8 pb-24 overflow-y-auto animate-in fade-in duration-300">
           {/* Hero Section */}
-          <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center text-center animate-in fade-in slide-in-from-bottom-8 duration-700 mb-20 relative mt-8">
+          <div className="w-full max-w-5xl mx-auto flex flex-col items-center justify-center text-center animate-in slide-in-from-bottom-4 fade-in duration-300 mb-20 relative mt-8">
             <div className="absolute inset-0 bg-brand-500/10 blur-[100px] rounded-full -z-10 w-full mx-auto h-full"></div>
 
             <div className="w-20 h-20 mb-6 rounded-2xl bg-gradient-to-tr from-brand-400 to-brand-600 shadow-xl shadow-brand-500/30 flex items-center justify-center text-white rotate-3 hover:rotate-0 transition-transform duration-500">
@@ -159,7 +159,7 @@ export default function AboutPage() {
           <div className="w-full max-w-7xl mx-auto space-y-24">
             {/* Our Story & Why We Built */}
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-              <div className="animate-in fade-in slide-in-from-left-8 duration-700 delay-100 fill-mode-both">
+              <div className="animate-in slide-in-from-left-4 fade-in duration-500">
                 <h2 className="text-3xl font-bold text-foreground mb-6">
                   Our Story
                 </h2>
@@ -197,7 +197,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="animate-in fade-in slide-in-from-right-8 duration-700 delay-200 fill-mode-both">
+              <div className="animate-in slide-in-from-bottom-4 fade-in duration-300" style={{ animationDelay: "100ms" }}>
                 <h2 className="text-3xl font-bold text-foreground mb-6">
                   Why We Built Laura
                 </h2>
@@ -236,7 +236,7 @@ export default function AboutPage() {
             </section>
 
             {/* Vision & Mission */}
-            <section className="space-y-8 animate-in fade-in duration-1000 delay-300 fill-mode-both">
+            <section className="space-y-8 animate-in slide-in-from-bottom-4 fade-in duration-300" style={{ animationDelay: "200ms" }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {/* Vision Card */}
                 <div className="formal-panel group rounded-3xl p-8 lg:p-10 relative overflow-hidden hover:shadow-brand-500/10 transition-all duration-500">
@@ -307,7 +307,7 @@ export default function AboutPage() {
             </section>
 
             {/* Differentiators Grid */}
-            <section className="animate-in fade-in duration-1000 delay-500 fill-mode-both">
+            <section className="animate-in slide-in-from-bottom-4 fade-in duration-300" style={{ animationDelay: "300ms" }}>
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-foreground mb-4">
                   What Makes Laura Different?
@@ -342,7 +342,7 @@ export default function AboutPage() {
             </section>
 
             {/* How It Works Stepper */}
-            <section className="animate-in fade-in duration-1000 delay-700 fill-mode-both pb-12">
+            <section className="animate-in slide-in-from-bottom-4 fade-in duration-300" style={{ animationDelay: "400ms" }}>
               <div className="text-center mb-16">
                 <h2 className="text-3xl font-bold text-foreground mb-2">
                   Our Smart Approach
