@@ -86,10 +86,10 @@ export default function Sidebar() {
       <div className="mt-auto px-3 w-full flex flex-col items-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300">
         <Link
           href="/team"
-          className={`w-full flex items-center justify-center h-10 rounded-full border-2 border-brand-500 active:scale-95 transition-all overflow-hidden ${
+          className={`w-full flex items-center justify-center h-10 rounded-full border active:scale-95 transition-all duration-500 overflow-hidden ${
             pathname === "/team"
-              ? "text-brand-600 bg-brand-50/80 shadow-sm dark:bg-brand-900/20 dark:text-brand-400" 
-              : "text-brand-600 dark:text-brand-500 hover:text-brand-700 dark:hover:text-brand-400 hover:bg-brand-50/80 dark:hover:bg-zinc-900/50 hover:shadow-sm"
+              ? "text-brand-600 bg-brand-500/10 border-brand-500/30 shadow-[0_0_15px_rgba(0,0,0,0.05)] dark:shadow-[0_0_15px_rgba(255,255,255,0.05)] dark:text-brand-400" 
+              : "text-slate-400 dark:text-slate-500 border-transparent bg-transparent hover:text-brand-600 dark:hover:text-brand-400 hover:bg-brand-500/10 hover:border-brand-500/30 hover:shadow-[0_0_15px_rgba(0,0,0,0.08)] dark:hover:shadow-[0_0_15px_rgba(255,255,255,0.08)]"
           }`}
           title="Team Codeveda"
         >
@@ -97,9 +97,6 @@ export default function Sidebar() {
             Team Codeveda
           </span>
         </Link>
-        <div className="text-[10px] text-center text-slate-400 mt-1 leading-tight whitespace-nowrap overflow-hidden">
-          Made with Love,<br/>Made By Hero Harshit
-        </div>
       </div>
     </aside>
   );
