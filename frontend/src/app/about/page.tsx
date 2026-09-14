@@ -107,10 +107,10 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
                 <h3 className="text-xl font-semibold text-brand-600 dark:text-brand-400 mb-4">Making the Complex World of Ayurveda IPR Easier to Understand</h3>
                 <div className="space-y-4 text-slate-500 dark:text-slate-400 leading-relaxed">
-                  <p>Ayurveda is so much more than a traditional system of medicine. It's centuries of knowledge, healing practices, and community-held wisdom passed down through generations. Today, passionate innovators, practitioners, and startups are bringing this ancient wisdom into the modern world.</p>
+                  <p>Ayurveda is so much more than a traditional system of medicine. It&apos;s centuries of knowledge, healing practices, and community-held wisdom passed down through generations. Today, passionate innovators, practitioners, and startups are bringing this ancient wisdom into the modern world.</p>
                   <p>But protecting that knowledge and navigating the regulations around it can be incredibly frustrating. The rules for patents, traditional knowledge, biodiversity, and drug compliance are scattered across dozens of different laws and government portals.</p>
-                  <p>If you don't have a legal background, figuring out what rules apply to you can feel overwhelming. That's exactly why we built Laura.</p>
-                  <p>Laura is a multilingual AI assistant designed specifically for the Ayurveda ecosystem. We aren't trying to replace your lawyers or regulatory experts. We just want to make taking that crucial first step easier, clearer, and a lot less intimidating.</p>
+                  <p>If you don&apos;t have a legal background, figuring out what rules apply to you can feel overwhelming. That&apos;s exactly why we built Laura.</p>
+                  <p>Laura is a multilingual AI assistant designed specifically for the Ayurveda ecosystem. We aren&apos;t trying to replace your lawyers or regulatory experts. We just want to make taking that crucial first step easier, clearer, and a lot less intimidating.</p>
                 </div>
               </div>
               
@@ -119,12 +119,12 @@ export default function AboutPage() {
                 <div className="formal-panel rounded-2xl p-8 relative overflow-hidden bg-brand-50/50 dark:bg-zinc-900/50">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-brand-500/10 rounded-full blur-3xl -mr-10 -mt-10 z-0"></div>
                   <div className="relative z-10 space-y-4 text-slate-500 dark:text-slate-400 leading-relaxed">
-                    <p>Imagine you're a small Ayurveda startup that just developed an amazing new herbal product. You're probably asking yourself:</p>
+                    <p>Imagine you&apos;re a small Ayurveda startup that just developed an amazing new herbal product. You&apos;re probably asking yourself:</p>
                     <ul className="list-disc pl-6 space-y-2 text-foreground font-medium">
-                      <li>"Can I actually patent this?"</li>
-                      <li>"Is this already considered traditional knowledge?"</li>
-                      <li>"Do I need to worry about biodiversity compliance?"</li>
-                      <li>"Is my product legally a medicine, a food, or a cosmetic?"</li>
+                      <li>&quot;Can I actually patent this?&quot;</li>
+                      <li>&quot;Is this already considered traditional knowledge?&quot;</li>
+                      <li>&quot;Do I need to worry about biodiversity compliance?&quot;</li>
+                      <li>&quot;Is my product legally a medicine, a food, or a cosmetic?&quot;</li>
                     </ul>
                     <p>Normally, finding answers to these questions means hiring expensive consultants or digging through complex legal texts. Laura brings all of this into one simple, guided conversation.</p>
                   </div>
